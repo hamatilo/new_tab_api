@@ -1,0 +1,160 @@
+html, body {
+    height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+
+.page {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1 
+{
+    margin: 0;
+    font-size: 120px;
+    animation: none;
+    display:none;
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+    font-size: 60px;
+    animation: none;
+    display: none;
+}
+#interest {
+    font-size: 40px;
+}
+#intereset {
+    display: none;
+}
+
+
+h3 {
+    padding-top: 20px;
+    width: 30%;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    animation: none;
+    display: none;
+}
+
+.right, .bottom-right, .bottom-left, .bottom-left-right {
+    position: absolute;
+    text-align: right;
+    color: lightgray;
+    font-size: 20px;
+    flex: 1 1 auto;
+}
+
+.center {
+    position: absolute;
+    bottom: 20px;
+    font-size: 20px;
+    cursor:pointer;
+}
+
+.right {
+    right: 0;
+    padding: 20px;
+    top: 0;
+}
+.bottom-right {
+    right: 20px;
+    bottom: 20px;
+    text-align: left;
+}
+
+.bottom-left {
+    left: 20px;
+    bottom: 20px;
+    text-align: left;
+    animation: none;
+}
+
+.bottom-left-right {
+    left: 100px;
+    bottom: 20px;
+    text-align: center;
+    visibility: hidden;
+    animation: none;
+}
+
+.button {
+    padding: 32px 16px;
+    width: 100px;
+    background-color: transparent;
+    border-style: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: lightgray;
+    outline: none;
+    cursor: pointer;
+    animation: none;
+}
+
+#reveal {
+    visibility: hidden;
+    color: #FFF;
+    font-size: 20px;
+    width: 200px;
+    animation: none;
+}
+
+.input {
+    width: 320px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background: 0;
+    border: 0;
+    border-bottom: 3px solid white;
+    color: white;
+    outline: none;
+    text-align: center;
+    font-size: 30px;
+    display: none;
+    animation: none;
+
+}
+
+.loader {
+    border: 5px solid;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-color: yellow transparent transparent;
+    animation: spin 1s linear infinite;
+    position: fixed;
+    visibility: hidden;
+}
+.error {
+    display: none;
+    animation: none;
+}
+
+@keyframes spin {
+    100%{transform:rotate(360deg); filter: hue-rotate(360deg)}
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 100%; }
+}
+
+@keyframes fadeOut {
+    0% { opacity: 100%; }
+    100% { opacity: 0; }
+}
